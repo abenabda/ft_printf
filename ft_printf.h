@@ -5,23 +5,23 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: abenabda <abenabda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/03 10:43:33 by abenabda          #+#    #+#             */
-/*   Updated: 2026/11/05 12:26:25 by abenabda         ###   ########.fr       */
+/*   Created: 2026/11/05 13:00:00 by abenabda          #+#    #+#             */
+/*   Updated: 2026/11/05 13:00:00 by abenabda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include <limits.h>
 # include <stdarg.h>
-# include <stdlib.h>
 # include <unistd.h>
 
-void	ft_putnbr(int n);
-void	ft_putchar(char c);
-void	ft_putstr(char *s);
-void	ft_putnbr_hex(unsigned int n, int isUpper);
-void	ft_putnbr_unsigned(unsigned int n);
+int	ft_printf(const char *format, ...);
+int	ft_putchar_len(char c);
+int	ft_putstr_len(char *s);
+int	ft_putnbr_len(int n);
+int	ft_putunsigned_len(unsigned int n);
+int	ft_puthex_len(unsigned int n, int is_upper);
+int	ft_putptr_len(void *ptr);
 
 #endif

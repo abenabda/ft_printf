@@ -6,7 +6,7 @@ ARFLAGS = rcs
 
 HEADER = ft_printf.h
 
-SRCS = ft_printf_utils.c ft_printf.c ft_printf_utils_2.c
+SRCS = ft_printf.c ft_printf_utils.c ft_printf_utils_2.c
 
 OBJS = $(SRCS:.c=.o)
 
